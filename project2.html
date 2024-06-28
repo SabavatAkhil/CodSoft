@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Newsletter</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 650px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header, .footer {
+            background-color: #043406;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .header img, .footer img {
+            width: 60px;
+        }
+        .content {
+            padding: 25px;
+        }
+        .content h1, .content h2, .content p {
+            margin: 0 0 20px;
+        }
+        .content .exciting-news {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content .exciting-news img {
+            width: 50px;
+            height: 50px;
+            margin-left: 15px;
+        }
+        .button {
+            display: block;
+            width: 85%;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .feature {
+            width: 48%;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .feature img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+        .form-container, .email-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .form-container input, .email-container input, .email-container textarea {
+            width: 85%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button, .email-container button {
+            width: 85%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+        @media (max-width: 650px) {
+            .features {
+                flex-direction: column;
+            }
+            .feature {
+                width: 100%;
+            }
+            .content .exciting-news {
+                flex-direction: column;
+                text-align: center;
+            }
+            .content .exciting-news img {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="C:\Users\Sabavat Akhil\Desktop\img1.jpg" alt="Logo">
+        <h1>Weekly Newsletter</h1>
+    </div>
+
+    <div class="content">
+        <div class="exciting-news">
+            <div>
+                <h2>Exciting Updates Ahead!</h2>
+                <p>We have some major news to share. Don't miss out on the latest developments!</p>
+            </div>
+            <img src="C:\Users\Sabavat Akhil\Desktop\img2.jpg" alt="Relevant Logo">
+        </div>
+        <a href="#" class="button" id="accountButton">Access Your Account</a>
+
+        <h2>New Features</h2>
+        <h3>Discover What's New</h3>
+        <div class="features">
+            <div class="feature">
+                <img src="C:\Users\Sabavat Akhil\Desktop\img3.jpg" alt="Timer">
+                <h4>Enhanced Timer</h4>
+                <p>Keep track of your tasks with our improved timer feature.</p>
+            </div>
+            <div class="feature">
+                <img src="C:\Users\Sabavat Akhil\Desktop\img4.jpg" alt="Measure tool">
+                <h4>Measurement Tool</h4>
+                <p>Accurate measurements for all your project needs.</p>
+            </div>
+            <div class="feature">
+                <img src="C:\Users\Sabavat Akhil\Desktop\img5.jpg" alt="Slider">
+                <h4>Customizable Slider</h4>
+                <p>Adjust settings with ease using our new slider.</p>
+            </div>
+            <div class="feature">
+                <img src="C:\Users\Sabavat Akhil\Desktop\img6.jpg" alt="Users">
+                <h4>User Management</h4>
+                <p>Manage user profiles and settings efficiently.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container" id="loginForm">
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button id="loginButton">Log In</button>
+        <button id="signupButton">Sign Up</button>
+    </div>
+
+    <div class="email-container" id="emailForm">
+        <input type="email" id="recipientEmail" placeholder="Recipient's Email">
+        <input type="text" id="subject" placeholder="Email Subject">
+        <textarea id="message" rows="5" placeholder="Compose your message"></textarea>
+        <button id="sendButton">Send Email</button>
+    </div>
+
+    <div class="footer">
+        <p>You received this email because you subscribed to our newsletter.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="C:\Users\Sabavat Akhil\Desktop\img7.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="C:\Users\Sabavat Akhil\Desktop\img9.jpg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="C:\Users\Sabavat Akhil\Desktop\img8.jpg" alt="Instagram"></a>
+        </div>
+        <p><a href="#" style="color: white;">Unsubscribe</a></p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('accountButton').addEventListener('click', function() {
+        document.querySelector('.content').style.display = 'none';
+        document.getElementById('loginForm').style.display = 'flex';
+    });
+
+    document.getElementById('loginButton').addEventListener('click', function() {
+        // Simulate login functionality
+        alert('Logging in...');
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('emailForm').style.display = 'flex';
+    });
+
+    document.getElementById('signupButton').addEventListener('click', function() {
+        // Simulate signup functionality
+        alert('Signing up...');
+    });
+
+    document.getElementById('sendButton').addEventListener('click', function() {
+        const recipientEmail = document.getElementById('recipientEmail').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        alert('Email sent to ${recipientEmail} with subject "${subject}" and message: "${message}"');
+        // Here you would normally use an email sending service API
+    });
+</script>
+
+</body>
+</html>
